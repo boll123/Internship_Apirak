@@ -351,3 +351,49 @@ footer a:hover{
     }
      
 }
+@media screen and (max-width: 992px) {
+    .main {
+        margin-top: 150px;
+        flex-direction: column;
+        justify-content: center;
+        height: auto; /* ป้องกันการขยายเพี้ยน */
+        padding: 5%;
+    }
+    .main .less1 {
+        flex-direction: column; /* เปลี่ยนจาก row เป็น column */
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        padding: 8%;
+    }
+    .imgin img {
+        max-width: 100%; /* ป้องกันภาพขยายเกินขนาด */
+        width: auto;
+        height: auto;
+    }
+    .bottom {
+        position: static; /* เอา absolute ออกเพื่อให้ไม่เพี้ยน */
+        text-align: center;
+        margin-top: 20px;
+    }
+    .about .items {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .about .items .item {
+        width: 100%;
+    }
+    .Projects .inner .Items {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Projects .inner .Items .item {
+        width: 100%;
+    }
+    .contact .items {
+        flex-direction: column;
+    }
+    .contact .items .item {
+        width: 100%;
+    }
+}
